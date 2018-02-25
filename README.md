@@ -1,3 +1,5 @@
+# This is a basic flask template #
+
 Notes
 ```
 This script requires the following modules:
