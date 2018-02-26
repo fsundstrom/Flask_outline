@@ -16,9 +16,10 @@ def index():
 
   # get remote ip
   ip = request.environ['REMOTE_ADDR']
+  head = request.headers
  
   # retirm template with info 
-  return render_template("index.html", lookup_ip=ip)
+  return render_template("index.html", lookup_ip=ip, headers=head)
 
 # Get Host info
 ##########################
