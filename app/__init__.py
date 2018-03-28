@@ -1,13 +1,12 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
-app.config.from_object(__name__)
+app.config.from_object('config')
+# use database test
+db = SQLAlchemy(test)
 
-#set up default config needed by request and not used in this demo
-app.config.update(dict(
-  HEADERS={'Accept': 'application/json'},
-  USERNAME='user',
-  PASSWORD='password',
-))
-from app import views
+# import flask views and database models
+from app import views, models
 
