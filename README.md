@@ -1,4 +1,4 @@
-# This is a basic flask template #
+# This is a basic flask template Python 2.7#
 
 Notes
 ```
